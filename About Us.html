@@ -6,47 +6,47 @@
              var first = document.myscreen.num1.value;
              var second = document.myscreen.num2.value;
              var result = parseInt(first) + parseInt(second);
-             window.document.myscreen.res.value=result;
+             window.document.myscreen.result.value=result;
          }
          function sub() {
              var first = window.document.myscreen.num1.value;
              var second = window.document.myscreen.num2.value;
              var result = parseInt(first) - parseInt(second);
-             window.document.myscreen.res.value=result;
+             window.document.myscreen.result.value=result;
          }
          function multi() {
              var first = window.document.myscreen.num1.value;
              var second = window.document.myscreen.num2.value;
              var result = parseInt(first) * parseInt(second);
-             window.document.myscreen.res.value=result;
+             window.document.myscreen.result.value=result;
          }
          function divide() {
              var first = window.document.myscreen.num1.value;
              var second = window.document.myscreen.num2.value;
              var result = parseInt(first) / parseInt(second);
-             window.document.myscreen.res.value=result;
+             window.document.myscreen.result.value=result;
          }
          function cube() {
              var first = window.document.myscreen.num1.value;
              var cubeno = parseInt("first")
              var result = parseInt(first) * parseInt(first)* parseInt(first);
-             window.document.myscreen.res.value=result;
+             window.document.myscreen.result.value=result;
          }
          function squre() {
              var first = window.document.myscreen.num1.value;
              var cubeno = parseInt("first")
              var result = parseInt(first) * parseInt(first);
-             window.document.myscreen.res.value=result;
+             window.document.myscreen.result.value=result;
          }
      </script>
     </head>
     <body>
         <center>
-            <h1>calculetor</h1>
+            <h1>CALCULATOR</h1>
         <form name="myscreen">
-            <input type="text" name="num1" placeholder="Enter 1st Number">
-            <input type="text" name="num2" placeholder="Enter 2nd Number">
-            <input type="text" name="res" placeholder="Show the Result">
+            <input type="text" name="num1" placeholder="Enter The Value">
+            <input type="text" name="num2" placeholder="Enter The Value">
+            <input type="text" name="result" placeholder="Show the Result">
             <input type="button" value="Add" onclick="sum()">
             <input type="button" value="SUB" onclick="sub()">
             <input type="button" value="MULTiply" onclick="multi()">
