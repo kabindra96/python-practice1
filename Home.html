@@ -30,7 +30,7 @@
     }
 
     .right {
-        display: inline-flex;
+        display: flex;
         position: absolute;
         right: 35px;
         top: 20px;
@@ -58,23 +58,36 @@
     .navbar li a:hover,
     .navbar li a.active {
         text-decoration-style: wavy;
-        color: rgba(0, 18, 175, 0.678);
+        color: rgba(228, 229, 243, 0.678);
+        transform: scale(1.2);
     }
 
     .left img {
         width: 73px;
     }
 
-    .btn {
+    .btn1 {
         width: 64px;
         height: 22px;
         color: #0034ff;
         background-color: #dfff0078;
         font-family: 'Kaushan Script', cursive;
     }
+    .btn2 {
+        width: 64px;
+        height: 22px;
+        color: #0034ff;
+        background-color: #dfff0078;
+        font-family: 'Kaushan Script', cursive;
+        padding-left: 3px;
+    }
+    .right button:hover{
+        color: #6b1818;
+        transform: scale(1.2);
+    }
     .text {
         font-family: 'Kaushan Script', cursive;
-        color: rgb(197, 7, 156);
+        color: rgb(19, 18, 18);
     }
 
     form {
@@ -96,6 +109,21 @@
         text-decoration: solid;
         position: fixed;
     }
+    .p1{
+        background-color: #6b1818;
+    }
+    .p2{
+        background-color: #2bb119;
+    }
+    .p3{
+        background-color: #7726d4;
+    }
+    .p4{
+        background-color: #c21fac;
+    }
+    fieldset{
+        background-color: aliceblue;
+    }
 </style>
 
 <script>
@@ -116,25 +144,26 @@
                 <li><a href="/Contact Us.html" class="">Contact Us</a></li>
             </ul>
         </div>
-        <div class="right"><button class="btn">LogIn</button>
-            <button class="btn">SignUp</button>
+        <div class="right">
+            <button class="btn1">LogIn</button>
+            <button class="btn2">SignUp</button>
         </div>
         <div class="text">
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officia molestiae accusantium adipisci eaque accusamus, error quasi et enim doloribus nam tempore excepturi, provident ut dolore, minus consectetur doloremque impedit?</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda delectus quaerat excepturi explicabo saepe quod culpa nemo cum, inventore, laudantium quia ab ratione labore! Illo ut exercitationem voluptatem recusandae.</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, illo doloremque, vitae quo eveniet inventore ratione facere id adipisci blanditiis voluptate ab non perspiciatis? Accusantium quibusdam error vitae cupiditate?</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel delectus vitae reprehenderit illum molestiae eveniet, dignissimos non optio id, similique rem tempore voluptatum, consequuntur modi earum dolor aperiam nulla.</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis beatae optio eaque voluptates labore pariatur, adipisci ratione possimus voluptatibus sapiente sit provident! Id nesciunt sequi sint saepe recusandae ducimus exercitationem?</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum est voluptatem facere? Minima ex assumenda ad ullam, consequuntur quo porro accusantium inventore odio quaerat itaque soluta, similique commodi eligendi ipsam.</p></div>
+            <div class="p1"><p>How it's done now. From the basics to advanced topics with simple, but detailed explanations.</p></div>
+            <div class="p2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda delectus quaerat excepturi explicabo saepe quod culpa nemo cum, inventore, laudantium quia ab ratione labore! Illo ut exercitationem voluptatem recusandae.</p></div>
+            <div class="p3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia, illo doloremque, vitae quo eveniet inventore ratione facere id adipisci blanditiis voluptate ab non perspiciatis? Accusantium quibusdam error vitae cupiditate?</p></div>
+            <div class="p4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel delectus vitae reprehenderit illum molestiae eveniet, dignissimos non optio id, similique rem tempore voluptatum, consequuntur modi earum dolor aperiam nulla.</p></div>
         </div>
     </header>
     <form action="">
         <fieldset>
-            <span>Name<input type="text" name="name" id="name" placeholder="Enter Your Full Name"></span>
+            <legend style="text-align: center;">User Registration Form</legend>
+            <span>Full Name<input type="text" name="name" id="name" placeholder="Enter Your Full Name"></span>
             <span>Mobile<input type="number" name="Mobile" id="Mobile" placeholder="Enter Your Mobile No."></span>
             <span>E-Mail<input type="email" name="Email" id="Email" placeholder="Enter Your Email"></span>
-            <span>Address<input type="text" name="Address" id="Address" placeholder="Enter your Full Address"></span>
+            <span>Communication Address<input type="text" name="Address" id="Address" placeholder="Enter your Full Address"></span>
         </fieldset>
+       
        
     </form>
     
